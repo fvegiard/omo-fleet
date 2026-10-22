@@ -1,6 +1,6 @@
 # OmO Fleet — fvdev
 
-Flotte privée de huit serveurs OpenCode 1.19.4 dans Docker, avec contrôleur local, tableau de bord, fenêtre Electron et skill Codex de pilotage.
+Flotte locale de huit serveurs OpenCode 1.19.4 dans Docker, avec contrôleur local, tableau de bord, fenêtre Electron et skill Codex de pilotage. Ce dépôt de code est public; les services restent accessibles uniquement sur le poste.
 
 ## Fonctionnement
 
