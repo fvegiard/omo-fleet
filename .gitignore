@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+*.secret
+*.log
+**/daemons/runtime/
+auth.json
+workflow-transcripts.json
+workflow-result.json

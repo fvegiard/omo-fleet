@@ -1,0 +1,300 @@
+name: omo-daemons-20261022
+services:
+  omo-01:
+    build: .
+    image: omo-fleet-opencode:1.19.4
+    restart: unless-stopped
+    init: true
+    ports: ['127.0.0.1:4401:4096']
+    environment:
+      FLEET_ID: omo-01
+      OPENCODE_SERVER_PASSWORD: ${OPENCODE_SERVER_PASSWORD:?Run setup.mjs first}
+    volumes:
+      - ./config:/run/fleet-config:ro
+      - omo-01-state:/state
+      - type: bind
+        source: ${USERPROFILE}/.codex/auth.json
+        target: /run/credentials/codex.json
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: D:/Github/dr-knowledge-lab/evidence/antigravity-routing-20261022.md
+        target: /workspace/antigravity-routing.md
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${APPDATA}/Code/User/settings.json
+        target: /workspace/vscode-settings.json
+        read_only: true
+        bind: {create_host_path: false}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:4096/global/health',{headers:{Authorization:'Basic '+Buffer.from('opencode:'+process.env.OPENCODE_SERVER_PASSWORD).toString('base64')}}).then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 6
+      start_period: 60s
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+  omo-02:
+    build: .
+    image: omo-fleet-opencode:1.19.4
+    restart: unless-stopped
+    init: true
+    ports: ['127.0.0.1:4402:4096']
+    environment:
+      FLEET_ID: omo-02
+      OPENCODE_SERVER_PASSWORD: ${OPENCODE_SERVER_PASSWORD:?Run setup.mjs first}
+    volumes:
+      - ./config:/run/fleet-config:ro
+      - omo-02-state:/state
+      - type: bind
+        source: ${USERPROFILE}/.codex/auth.json
+        target: /run/credentials/codex.json
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: D:/Github/dr-knowledge-lab/evidence/antigravity-routing-20261022.md
+        target: /workspace/antigravity-routing.md
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${APPDATA}/Code/User/settings.json
+        target: /workspace/vscode-settings.json
+        read_only: true
+        bind: {create_host_path: false}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:4096/global/health',{headers:{Authorization:'Basic '+Buffer.from('opencode:'+process.env.OPENCODE_SERVER_PASSWORD).toString('base64')}}).then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 6
+      start_period: 60s
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+  omo-03:
+    build: .
+    image: omo-fleet-opencode:1.19.4
+    restart: unless-stopped
+    init: true
+    ports: ['127.0.0.1:4403:4096']
+    environment:
+      FLEET_ID: omo-03
+      OPENCODE_SERVER_PASSWORD: ${OPENCODE_SERVER_PASSWORD:?Run setup.mjs first}
+    volumes:
+      - ./config:/run/fleet-config:ro
+      - omo-03-state:/state
+      - type: bind
+        source: ${USERPROFILE}/.codex/auth.json
+        target: /run/credentials/codex.json
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: D:/Github/dr-knowledge-lab/evidence/antigravity-routing-20261022.md
+        target: /workspace/antigravity-routing.md
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${APPDATA}/Code/User/settings.json
+        target: /workspace/vscode-settings.json
+        read_only: true
+        bind: {create_host_path: false}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:4096/global/health',{headers:{Authorization:'Basic '+Buffer.from('opencode:'+process.env.OPENCODE_SERVER_PASSWORD).toString('base64')}}).then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 6
+      start_period: 60s
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+  omo-04:
+    build: .
+    image: omo-fleet-opencode:1.19.4
+    restart: unless-stopped
+    init: true
+    ports: ['127.0.0.1:4404:4096']
+    environment:
+      FLEET_ID: omo-04
+      OPENCODE_SERVER_PASSWORD: ${OPENCODE_SERVER_PASSWORD:?Run setup.mjs first}
+    volumes:
+      - ./config:/run/fleet-config:ro
+      - omo-04-state:/state
+      - type: bind
+        source: ${USERPROFILE}/.codex/auth.json
+        target: /run/credentials/codex.json
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: D:/Github/dr-knowledge-lab/evidence/antigravity-routing-20261022.md
+        target: /workspace/antigravity-routing.md
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${APPDATA}/Code/User/settings.json
+        target: /workspace/vscode-settings.json
+        read_only: true
+        bind: {create_host_path: false}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:4096/global/health',{headers:{Authorization:'Basic '+Buffer.from('opencode:'+process.env.OPENCODE_SERVER_PASSWORD).toString('base64')}}).then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 6
+      start_period: 60s
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+  omo-05:
+    build: .
+    image: omo-fleet-opencode:1.19.4
+    restart: unless-stopped
+    init: true
+    ports: ['127.0.0.1:4405:4096']
+    environment:
+      FLEET_ID: omo-05
+      OPENCODE_SERVER_PASSWORD: ${OPENCODE_SERVER_PASSWORD:?Run setup.mjs first}
+    volumes:
+      - ./config:/run/fleet-config:ro
+      - omo-05-state:/state
+      - type: bind
+        source: ${USERPROFILE}/.codex/auth.json
+        target: /run/credentials/codex.json
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: D:/Github/dr-knowledge-lab/evidence/antigravity-routing-20261022.md
+        target: /workspace/antigravity-routing.md
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${APPDATA}/Code/User/settings.json
+        target: /workspace/vscode-settings.json
+        read_only: true
+        bind: {create_host_path: false}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:4096/global/health',{headers:{Authorization:'Basic '+Buffer.from('opencode:'+process.env.OPENCODE_SERVER_PASSWORD).toString('base64')}}).then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 6
+      start_period: 60s
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+  omo-06:
+    build: .
+    image: omo-fleet-opencode:1.19.4
+    restart: unless-stopped
+    init: true
+    ports: ['127.0.0.1:4406:4096']
+    environment:
+      FLEET_ID: omo-06
+      OPENCODE_SERVER_PASSWORD: ${OPENCODE_SERVER_PASSWORD:?Run setup.mjs first}
+    volumes:
+      - ./config:/run/fleet-config:ro
+      - omo-06-state:/state
+      - type: bind
+        source: ${USERPROFILE}/.codex/auth.json
+        target: /run/credentials/codex.json
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: D:/Github/dr-knowledge-lab/evidence/antigravity-routing-20261022.md
+        target: /workspace/antigravity-routing.md
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${APPDATA}/Code/User/settings.json
+        target: /workspace/vscode-settings.json
+        read_only: true
+        bind: {create_host_path: false}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:4096/global/health',{headers:{Authorization:'Basic '+Buffer.from('opencode:'+process.env.OPENCODE_SERVER_PASSWORD).toString('base64')}}).then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 6
+      start_period: 60s
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+  omo-07:
+    build: .
+    image: omo-fleet-opencode:1.19.4
+    restart: unless-stopped
+    init: true
+    ports: ['127.0.0.1:4407:4096']
+    environment:
+      FLEET_ID: omo-07
+      OPENCODE_SERVER_PASSWORD: ${OPENCODE_SERVER_PASSWORD:?Run setup.mjs first}
+    volumes:
+      - ./config:/run/fleet-config:ro
+      - omo-07-state:/state
+      - type: bind
+        source: ${USERPROFILE}/.codex/auth.json
+        target: /run/credentials/codex.json
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: D:/Github/dr-knowledge-lab/evidence/antigravity-routing-20261022.md
+        target: /workspace/antigravity-routing.md
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${APPDATA}/Code/User/settings.json
+        target: /workspace/vscode-settings.json
+        read_only: true
+        bind: {create_host_path: false}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:4096/global/health',{headers:{Authorization:'Basic '+Buffer.from('opencode:'+process.env.OPENCODE_SERVER_PASSWORD).toString('base64')}}).then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 6
+      start_period: 60s
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+  omo-08:
+    build: .
+    image: omo-fleet-opencode:1.19.4
+    restart: unless-stopped
+    init: true
+    ports: ['127.0.0.1:4408:4096']
+    environment:
+      FLEET_ID: omo-08
+      OPENCODE_SERVER_PASSWORD: ${OPENCODE_SERVER_PASSWORD:?Run setup.mjs first}
+    volumes:
+      - ./config:/run/fleet-config:ro
+      - omo-08-state:/state
+      - type: bind
+        source: ${USERPROFILE}/.codex/auth.json
+        target: /run/credentials/codex.json
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: D:/Github/dr-knowledge-lab/evidence/antigravity-routing-20261022.md
+        target: /workspace/antigravity-routing.md
+        read_only: true
+        bind: {create_host_path: false}
+      - type: bind
+        source: ${APPDATA}/Code/User/settings.json
+        target: /workspace/vscode-settings.json
+        read_only: true
+        bind: {create_host_path: false}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:4096/global/health',{headers:{Authorization:'Basic '+Buffer.from('opencode:'+process.env.OPENCODE_SERVER_PASSWORD).toString('base64')}}).then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 6
+      start_period: 60s
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+volumes:
+  omo-01-state:
+  omo-02-state:
+  omo-03-state:
+  omo-04-state:
+  omo-05-state:
+  omo-06-state:
+  omo-07-state:
+  omo-08-state:
+

@@ -1,0 +1,11 @@
+{
+  "providerID": "openai",
+  "ollama": {
+    "enabled": false,
+    "baseURL": "http://host.docker.internal:11434/v1",
+    "modelID": ""
+  },
+  "id": "omo-03",
+  "modelID": "gpt-6-astra",
+  "effort": "high"
+}

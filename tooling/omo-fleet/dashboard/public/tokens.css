@@ -1,0 +1,136 @@
+/* Design tokens for the OmO fleet dashboard. Source of truth: ../DESIGN.md.
+   Raw values live here and in DESIGN.md only; styles.css references tokens. */
+:root {
+  color-scheme: light dark;
+
+  /* 2. Color - light */
+  --surface-0: #F4F1EA;
+  --surface-1: #FFFFFF;
+  --surface-2: #EDE9E0;
+  --surface-3: #E4DFD3;
+  --text-primary: #141A21;
+  --text-secondary: #48535F;
+  --text-tertiary: #5E6975;
+  --border-default: #CFC8BB;
+  --border-subtle: #E6E1D6;
+  --accent: #0F6E8C;
+  --accent-hover: #0B596F;
+  --status-success: #1E7A46;
+  --status-warning: #9A5B00;
+  --status-error: #B42318;
+  --status-info: #2456B8;
+  --status-neutral: #5B6675;
+
+  /* 3. Typography */
+  --font-display: "Bahnschrift", "DIN Alternate", "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "Ubuntu Sans Mono", "Cascadia Mono", "Consolas", ui-monospace, "SF Mono", Menlo, monospace;
+  --text-display: 28px;
+  --text-h2: 20px;
+  --text-h3: 17px;
+  --text-body: 16px;
+  --text-sm: 14px;
+  --text-caption: 12.5px;
+  --text-overline: 11.5px;
+  --text-mono: 13px;
+  --leading-display: 1.15;
+  --leading-h2: 1.25;
+  --leading-h3: 1.3;
+  --leading-body: 1.55;
+  --leading-sm: 1.45;
+  --leading-caption: 1.4;
+  --leading-mono: 1.5;
+  --tracking-display: -0.01em;
+  --tracking-h2: -0.005em;
+  --tracking-caption: 0.01em;
+  --tracking-overline: 0.08em;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  /* 4. Spacing & layout */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --content-max: 1440px;
+  --gutter: var(--space-4);
+  --bay-padding: var(--space-4);
+  --control-height: 44px;
+
+  /* 6. Motion */
+  --motion-micro: 120ms;
+  --motion-standard: 220ms;
+  --ease-out: ease-out;
+  --ease-in-out: ease-in-out;
+
+  /* 7. Depth & surface */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-full: 9999px;
+  --border-control: 1px solid var(--border-default);
+  --border-divider: 1px solid var(--border-subtle);
+  --focus-ring: 2px solid var(--accent);
+  --focus-offset: 2px;
+
+  /* Washes: status/accent at 14% over the current surface */
+  --wash-alpha: 14%;
+  --wash-accent: color-mix(in srgb, var(--accent) var(--wash-alpha), transparent);
+  --wash-success: color-mix(in srgb, var(--status-success) var(--wash-alpha), transparent);
+  --wash-warning: color-mix(in srgb, var(--status-warning) var(--wash-alpha), transparent);
+  --wash-error: color-mix(in srgb, var(--status-error) var(--wash-alpha), transparent);
+  --wash-info: color-mix(in srgb, var(--status-info) var(--wash-alpha), transparent);
+  --wash-neutral: color-mix(in srgb, var(--status-neutral) var(--wash-alpha), transparent);
+  --wash-pressed-alpha: 24%;
+  --wash-accent-pressed: color-mix(in srgb, var(--accent) var(--wash-pressed-alpha), transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-0: #0B0F14;
+    --surface-1: #121820;
+    --surface-2: #1A222C;
+    --surface-3: #222C38;
+    --text-primary: #ECEFF3;
+    --text-secondary: #A3AEBB;
+    --text-tertiary: #8A96A3;
+    --border-default: #2E3947;
+    --border-subtle: #1F2834;
+    --accent: #4CC3E0;
+    --accent-hover: #7AD4EA;
+    --status-success: #4ADE80;
+    --status-warning: #F5B64A;
+    --status-error: #F87171;
+    --status-info: #7CA7F7;
+    --status-neutral: #8A96A3;
+  }
+}
+
+/* Phone type sizes (DESIGN.md section 3) */
+@media (max-width: 640px) {
+  :root {
+    --text-body: 17px;
+    --text-sm: 15px;
+    --text-caption: 13px;
+  }
+}
+
+/* Desktop gutters and bay padding (DESIGN.md section 4) */
+@media (min-width: 1024px) {
+  :root {
+    --gutter: var(--space-8);
+    --bay-padding: var(--space-5);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    /* Durations stay; styles.css switches transforms to opacity-only. */
+    --ease-out: linear;
+    --ease-in-out: linear;
+  }
+}

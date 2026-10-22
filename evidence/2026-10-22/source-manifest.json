@@ -1,0 +1,150 @@
+{
+  "sourceCommit": "d0a267a",
+  "sourceBranch": "feat/omo-docker-daemons-20261022",
+  "files": [
+    {
+      "path": "tooling/omo-fleet/daemons/.dockerignore",
+      "sha256": "7f3ae648ac3fd3f457649e38aa64f64e495e3e73a86e499363a4e09cf5146b53"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/.gitignore",
+      "sha256": "00ef54002e708da7a24df0933e4ad9f8e88c72e864949260c00935352ed0f19e"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/Dockerfile",
+      "sha256": "1af23e8a7a4463bc538bfe3282a61b31be8bed3c6c4237ffcfeec0bbf517b792"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/README.md",
+      "sha256": "621c0f8ba91abcd3fb7507c663eb94e8bbb78f953c78571b33b6debb274a335f"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/REPORT.md",
+      "sha256": "81a816629271113f757a108cc22567416e75d41425d03f9a6bc13985bc4896e1"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/acceptance.mjs",
+      "sha256": "d357077702166e74aa89fc36368674825f83d2b685e15d0d570942afe79386d1"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/boot.mjs",
+      "sha256": "2456cc1b8ff37933ac561795926060064601fa6ac8accb5fcf7ad935d2783540"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/config/omo-01.json",
+      "sha256": "d975b0a898182d3b1c1b78423383f8c757fd8e4700fcdba3ec78d01b415e14a2"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/config/omo-02.json",
+      "sha256": "d7561610cd145f78595d607d2fa48927c6b82ce67eefebb1d03eb7ecf1948360"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/config/omo-03.json",
+      "sha256": "642c7fc8df57a2f3bbb067d21211ee2c1b5c2d3404a70f0098b6d52105f13584"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/config/omo-04.json",
+      "sha256": "8215d2c84cdfb4eb6e84e204a0ec79448fe2ecd4876c5ca9db7e606e422ed507"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/config/omo-05.json",
+      "sha256": "480636b00eff386e1924857416213f25784c896ff9032aef2f3ccff36a74b797"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/config/omo-06.json",
+      "sha256": "75e34d69dbd3b983182c40eea43bf128e421df02dbd679cdc621d31ca65e576e"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/config/omo-07.json",
+      "sha256": "f5c46318ea5a4592c3fc1b2411e5726a8dccc1c6d43a6965657577f49eb2e9c9"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/config/omo-08.json",
+      "sha256": "1bd14cf77b168db87b81c52712f911c363cb1399e48281c26b6d906914e5aa76"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/controller.mjs",
+      "sha256": "0c0e5a8901b6ccafe5ea047e7cf213d620d205cc4445f79bb19f54ba0f3a8e49"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/controller.test.mjs",
+      "sha256": "fb9418e92589b3939893bfddd416a1afd7284d31db9382a86219f17b38f01dc1"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/docker-compose.yml",
+      "sha256": "e132da702fa8b06ecb3805a0a31a5da6c8811b94008d71138b08894a33e5384a"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/inspect.mjs",
+      "sha256": "dd8f2f7f118e8d803784467646b056f6904a0349c688d1ffaee4bae6dd594c73"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/install-startup.ps1",
+      "sha256": "cc629949de4506d9fe1e3251f29a3d389fbadf55afeb881ab6ebecef811d5fc1"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/launch.mjs",
+      "sha256": "ddb8200e74813738effbe8f6b04e3d193a9660e854d0f578f1d1f737fa2e3d34"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/probe.mjs",
+      "sha256": "943425a6e3c3a9205af7c2caa9889d5793f671e2b68a663db3af4edfb73fef22"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/run.mjs",
+      "sha256": "a3e2993bd19c0c7fa80083383094b472672a9fd209739d6abb8739260db970cb"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/runtime-config.mjs",
+      "sha256": "11e316cd99d298b4d8f66d3905cb3c7bf05cc4539d5dc6e083a30acd6d82558c"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/save-screenshot.mjs",
+      "sha256": "a2d276603ba8ad2a00815d953536104101ff0137d77188135103cf4bce5a4480"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/setup.mjs",
+      "sha256": "7b39708ef94e028f492a8c74f2fe21254cc58b0ef889eee9b4739ab5c2ad540c"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/sync-config.mjs",
+      "sha256": "7564ba981c679ad919bb583527bcdf9d68a56f5ee29f44e9a08111217a247fd4"
+    },
+    {
+      "path": "tooling/omo-fleet/daemons/verify-evidence.mjs",
+      "sha256": "e25e13f9d3788f6f59c93fde6320c2ae8b16eec40fb261f4d2bb1f7aafe39cdd"
+    },
+    {
+      "path": "tooling/omo-fleet/dashboard/public/daemons.html",
+      "sha256": "b7b8978a4c4e8de19d701c8d0514d1b2e1f75d9d1cf2f2a618ffa0e332a41f4a"
+    },
+    {
+      "path": "tooling/omo-fleet/dashboard/public/daemons.js",
+      "sha256": "8aac31e6e3c2ebefa0616466d81c744ffe2d50c943c5de4408c8d96d5a22eccc"
+    },
+    {
+      "path": "tooling/omo-fleet/dashboard/public/styles.css",
+      "sha256": "a0a56c1fb202a7d89e0d10735fc92929e5926a6553ad4e554d18303dbc49b0d9"
+    },
+    {
+      "path": "tooling/omo-fleet/dashboard/public/tokens.css",
+      "sha256": "05701663e32e979d216aaea1c516ad45a3599e8e430d4099c2638770f4f49fc2"
+    },
+    {
+      "path": "tooling/omo-fleet/electron/.gitignore",
+      "sha256": "e8bc935ce727f1809c792f4c5d26c5fc75ba2b7df7fc9390c56c8892f6a6007f"
+    },
+    {
+      "path": "tooling/omo-fleet/electron/main.mjs",
+      "sha256": "c91007e663b6e6d88e7dd6780b46bea5a6d8ad4c096b2942c08540f5d1ce26bb"
+    },
+    {
+      "path": "tooling/omo-fleet/electron/package-lock.json",
+      "sha256": "e613a29b6233c54f1038de7c4e849f18b7aca4f84e72ca8f9c378afc582132e4"
+    },
+    {
+      "path": "tooling/omo-fleet/electron/package.json",
+      "sha256": "372ba942c6192cd4691e2c261137f41863218df661797c34a1cb9d9884a11b34"
+    }
+  ]
+}

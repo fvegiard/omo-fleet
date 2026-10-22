@@ -1,0 +1,401 @@
+{
+  "at": "2026-10-22T19:54:26.669Z",
+  "verdict": "PASS",
+  "chronology": true,
+  "elapsedSeconds": 37.558,
+  "checks": [
+    {
+      "id": "omo-01",
+      "sessionID": "ses_e9ad441dfffevp1GQ0zJGyMnSs",
+      "actual": {
+        "providerID": "openai",
+        "modelID": "gpt-6.1-sol",
+        "variant": "medium"
+      },
+      "responseMatchesTranscript": true,
+      "completed": true,
+      "triageReceivedExactly": null,
+      "analysesReceivedExactly": null,
+      "completedFileRead": true,
+      "tokens": [
+        {
+          "total": 1430,
+          "input": 1405,
+          "output": 25,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        {
+          "total": 17642,
+          "input": 16002,
+          "output": 260,
+          "reasoning": 100,
+          "cache": {
+            "read": 1280,
+            "write": 0
+          }
+        }
+      ],
+      "times": [
+        {
+          "created": 1792698727991,
+          "completed": 1792698730402
+        },
+        {
+          "created": 1792698730405,
+          "completed": 1792698741620
+        }
+      ]
+    },
+    {
+      "id": "omo-02",
+      "sessionID": "ses_e9ad40c79ffecNxL7B4bqAksJC",
+      "actual": {
+        "providerID": "openai",
+        "modelID": "gpt-6.1-sol",
+        "variant": "medium"
+      },
+      "responseMatchesTranscript": true,
+      "completed": true,
+      "triageReceivedExactly": true,
+      "analysesReceivedExactly": null,
+      "completedFileRead": true,
+      "tokens": [
+        {
+          "total": 1686,
+          "input": 1661,
+          "output": 25,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        {
+          "total": 17795,
+          "input": 17538,
+          "output": 162,
+          "reasoning": 95,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        }
+      ],
+      "times": [
+        {
+          "created": 1792698741674,
+          "completed": 1792698744269
+        },
+        {
+          "created": 1792698744271,
+          "completed": 1792698752502
+        }
+      ]
+    },
+    {
+      "id": "omo-03",
+      "sessionID": "ses_e9ad40c79ffebCurWFQUrna6yJ",
+      "actual": {
+        "providerID": "openai",
+        "modelID": "gpt-6-astra",
+        "variant": "high"
+      },
+      "responseMatchesTranscript": true,
+      "completed": true,
+      "triageReceivedExactly": true,
+      "analysesReceivedExactly": null,
+      "completedFileRead": true,
+      "tokens": [
+        {
+          "total": 1685,
+          "input": 1660,
+          "output": 25,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        {
+          "total": 17771,
+          "input": 17537,
+          "output": 158,
+          "reasoning": 76,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        }
+      ],
+      "times": [
+        {
+          "created": 1792698741672,
+          "completed": 1792698743917
+        },
+        {
+          "created": 1792698743920,
+          "completed": 1792698753324
+        }
+      ]
+    },
+    {
+      "id": "omo-04",
+      "sessionID": "ses_e9ad40c79ffe68hsJI2lQRlwq9",
+      "actual": {
+        "providerID": "openai",
+        "modelID": "gpt-6.1-sol",
+        "variant": "medium"
+      },
+      "responseMatchesTranscript": true,
+      "completed": true,
+      "triageReceivedExactly": true,
+      "analysesReceivedExactly": null,
+      "completedFileRead": true,
+      "tokens": [
+        {
+          "total": 1685,
+          "input": 1660,
+          "output": 25,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        {
+          "total": 17699,
+          "input": 16001,
+          "output": 162,
+          "reasoning": 0,
+          "cache": {
+            "read": 1536,
+            "write": 0
+          }
+        }
+      ],
+      "times": [
+        {
+          "created": 1792698741671,
+          "completed": 1792698743577
+        },
+        {
+          "created": 1792698743579,
+          "completed": 1792698748123
+        }
+      ]
+    },
+    {
+      "id": "omo-05",
+      "sessionID": "ses_e9ad40c79ffekXvb3r5R078zcs",
+      "actual": {
+        "providerID": "openai",
+        "modelID": "gpt-6.1-sol",
+        "variant": "medium"
+      },
+      "responseMatchesTranscript": true,
+      "completed": true,
+      "triageReceivedExactly": true,
+      "analysesReceivedExactly": null,
+      "completedFileRead": true,
+      "tokens": [
+        {
+          "total": 1685,
+          "input": 1660,
+          "output": 25,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        {
+          "total": 17689,
+          "input": 16001,
+          "output": 152,
+          "reasoning": 0,
+          "cache": {
+            "read": 1536,
+            "write": 0
+          }
+        }
+      ],
+      "times": [
+        {
+          "created": 1792698741673,
+          "completed": 1792698743693
+        },
+        {
+          "created": 1792698743696,
+          "completed": 1792698748349
+        }
+      ]
+    },
+    {
+      "id": "omo-06",
+      "sessionID": "ses_e9ad40c79ffeZiIFN6bzoOqcM3",
+      "actual": {
+        "providerID": "openai",
+        "modelID": "gpt-6.1-sol",
+        "variant": "medium"
+      },
+      "responseMatchesTranscript": true,
+      "completed": true,
+      "triageReceivedExactly": true,
+      "analysesReceivedExactly": null,
+      "completedFileRead": true,
+      "tokens": [
+        {
+          "total": 1685,
+          "input": 1660,
+          "output": 25,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        {
+          "total": 17692,
+          "input": 16001,
+          "output": 155,
+          "reasoning": 0,
+          "cache": {
+            "read": 1536,
+            "write": 0
+          }
+        }
+      ],
+      "times": [
+        {
+          "created": 1792698741672,
+          "completed": 1792698743549
+        },
+        {
+          "created": 1792698743552,
+          "completed": 1792698749085
+        }
+      ]
+    },
+    {
+      "id": "omo-07",
+      "sessionID": "ses_e9ad40c79fferKbClZWqy2lNOw",
+      "actual": {
+        "providerID": "openai",
+        "modelID": "gpt-6.1-sol",
+        "variant": "medium"
+      },
+      "responseMatchesTranscript": true,
+      "completed": true,
+      "triageReceivedExactly": true,
+      "analysesReceivedExactly": null,
+      "completedFileRead": true,
+      "tokens": [
+        {
+          "total": 1687,
+          "input": 1662,
+          "output": 25,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        {
+          "total": 17695,
+          "input": 17539,
+          "output": 156,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        }
+      ],
+      "times": [
+        {
+          "created": 1792698741673,
+          "completed": 1792698743859
+        },
+        {
+          "created": 1792698743861,
+          "completed": 1792698748809
+        }
+      ]
+    },
+    {
+      "id": "omo-08",
+      "sessionID": "ses_e9ad3dec4ffe0Gg8kxURZzKSI6",
+      "actual": {
+        "providerID": "openai",
+        "modelID": "gpt-6.1-sol",
+        "variant": "medium"
+      },
+      "responseMatchesTranscript": true,
+      "completed": true,
+      "triageReceivedExactly": null,
+      "analysesReceivedExactly": [
+        {
+          "id": "omo-02",
+          "received": true
+        },
+        {
+          "id": "omo-03",
+          "received": true
+        },
+        {
+          "id": "omo-04",
+          "received": true
+        },
+        {
+          "id": "omo-05",
+          "received": true
+        },
+        {
+          "id": "omo-06",
+          "received": true
+        },
+        {
+          "id": "omo-07",
+          "received": true
+        }
+      ],
+      "completedFileRead": true,
+      "tokens": [
+        {
+          "total": 2434,
+          "input": 2409,
+          "output": 25,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        {
+          "total": 18591,
+          "input": 18286,
+          "output": 305,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        }
+      ],
+      "times": [
+        {
+          "created": 1792698753357,
+          "completed": 1792698755672
+        },
+        {
+          "created": 1792698755674,
+          "completed": 1792698765549
+        }
+      ]
+    }
+  ]
+}
